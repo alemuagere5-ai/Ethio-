@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="om">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ETHIO HERREGA KUTAA 9</title>
+
+<style>
+body{
+margin:0;
+font-family:Arial;
+background:#0f172a;
+color:white;
+}
+
+header{
+background:#1e293b;
+padding:20px;
+text-align:center;
+}
+
+header h1{
+color:#38bdf8;
+font-size:35px;
+}
+
+nav{
+display:flex;
+justify-content:center;
+flex-wrap:wrap;
+background:#111827;
+padding:10px;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+background:#2563eb;
+padding:10px 15px;
+margin:5px;
+border-radius:10px;
+}
+
+.hero{
+text-align:center;
+padding:40px 20px;
+}
+
+.hero h2{
+font-size:40px;
+color:#facc15;
+}
+
+.container{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+padding:20px;
+}
+
+.card{
+background:#1e293b;
+padding:20px;
+border-radius:20px;
+}
+
+.card h3{
+color:#38bdf8;
+}
+
+.quiz{
+background:#111827;
+margin:20px;
+padding:20px;
+border-radius:20px;
+text-align:center;
+}
+
+button{
+padding:12px 20px;
+margin:10px;
+border:none;
+border-radius:10px;
+background:#2563eb;
+color:white;
+font-size:18px;
+}
+
+button:hover{
+background:#38bdf8;
+}
+
+#score{
+font-size:30px;
+color:#22c55e;
+}
+
+footer{
+background:#1e293b;
+padding:20px;
+text-align:center;
+margin-top:30px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<h1>ETHIO HERREGA KUTAA 9</h1>
+<p>Barnoota Herregaa fi Gaaffii Matric Ethiopia</p>
+</header>
+
+<nav>
+<a href="#">Home</a>
+<a href="#">Algebra</a>
+<a href="#">Geometry</a>
+<a href="#">Matrix</a>
+<a href="#">Trigonometry</a>
+<a href="#">Matric</a>
+</nav>
+
+<section class="hero">
+<h2>Baga Nagaan Dhufte</h2>
+<p>
+Website kana keessatti barnoota herregaa kutaa 9ffaa hanga matric ni argatta.
+</p>
+</section>
+
+<section class="container">
+
+<div class="card">
+<h3>Algebra</h3>
+<p>Equation fi formula adda addaa baradhu.</p>
+</div>
+
+<div class="card">
+<h3>Geometry</h3>
+<p>Angle, shape fi theorem hubadhu.</p>
+</div>
+
+<div class="card">
+<h3>Matrix</h3>
+<p>Matrix addition fi subtraction baradhu.</p>
+</div>
+
+<div class="card">
+<h3>Trigonometry</h3>
+<p>Sin, Cos fi Tan salphatti baradhu.</p>
+</div>
+
+</section>
+
+<section class="quiz">
+
+<h2>Gaaffii Matric</h2>
+
+<p>2x + 5 = 15 yoo ta’e x meeqa?</p>
+
+<button onclick="correct()">5</button>
+<button onclick="wrong()">10</button>
+<button onclick="wrong()">7</button>
+
+<h3>Score</h3>
+<p id="score">0</p>
+
+</section>
+
+<footer>
+<p>© 2026 ETHIO HERREGA | Designed by Inyu</p>
+</footer>
+
+<script>
+
+let marks = 0;
+
+function correct(){
+marks++;
+document.getElementById("score").innerHTML = marks;
+alert("Sirrii dha!");
+}
+
+function wrong(){
+alert("Dogoggora!");
+}
+
+</script>
+
+</body>
+</html>
